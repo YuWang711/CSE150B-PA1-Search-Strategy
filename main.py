@@ -100,9 +100,9 @@ class GridWorld():
                                     self.grid.set_goal(node.pos)
 
     def blitInfo(self):
-        line1 = self.font.render("Esc: exit; Enter: find path/pause; m: randomize board; c: clear/abort", 1, WHITE)
+        line1 = self.font.render("Esc: exit; Enter: search/pause; c: clear path; m: random board (clear first)", 1, WHITE)
         line2 = self.font.render("s: place start; g: place goal; p: place puddle; r: place grass; x: clear node", 1, WHITE)
-        line3 = self.font.render("w: save board; l: load board, n: new board", 1, WHITE)
+        line3 = self.font.render("w: save board; l: load board, n: no obstacles", 1, WHITE)
         line4 = self.font.render("1: DFS, 2: BFS, 3: UCS, 4: A*", 1, WHITE)
         if self.ai.finished and not self.ai.failed:
             score = str(self.ai.final_cost)
