@@ -5,6 +5,7 @@ from test import test
 import argparse
 random.seed(0)
 
+
 class GridWorld():
     def __init__(self):
         pygame.init()
